@@ -70,7 +70,8 @@
 
 - Keep `docs/FILE-INDEX.md` as the inventory of important files and directories.
 - Keep `docs/FILE-MAP.md` as the guide for where each kind of work belongs.
-- When adding, moving, renaming, or deleting files, update both documents in the same change.
+- When adding, moving, renaming, or deleting important files, update `docs/FILE-INDEX.md`.
+- Update `docs/FILE-MAP.md` only when the change adds or changes where a type of work belongs.
 - If a change does not need an index or map update, say why in the final summary.
 - Keep entries short. Prefer purpose and ownership over implementation detail.
 
@@ -82,6 +83,13 @@
 - Start at the lowest applicable stage and do not skip stages unless source artifacts already exist.
 - Record prompt use in the generated artifact under `Prompt Trace`.
 - If no governed prompt was used for a planning or design artifact, record `Prompt: none` and explain why.
+
+## Docs Governance Checks
+
+- Run `scripts/docs-lint.sh` after changes to `AGENTS.md`, `docs/`, `scripts/`, `tests/`, or governance files.
+- Run it before the final summary and before committing those changes.
+- If the command cannot run, report why and state the remaining risk.
+- Keep the shell wrapper small. Put policy logic in `scripts/docs_lint.py` and tests in `tests/`.
 
 ## Commits
 

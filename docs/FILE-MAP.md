@@ -1,6 +1,6 @@
 # File Map
 
-This file explains where work belongs. Use it before creating new files.
+This file explains where work belongs. Use it before creating new files. It is not a file inventory; use `docs/FILE-INDEX.md` when you need to find a specific file.
 
 ## Planning and Delivery
 
@@ -20,6 +20,8 @@ This file explains where work belongs. Use it before creating new files.
 | Variant profile | `docs/templates/variant-profile.md` | Use before variant-specific architecture, design, or implementation starts. |
 | Governed prompt | `docs/prompts/` | Use for stage-specific planning and design prompts. |
 | Artifact elicitation prompt | `docs/prompts/PRM-005-artifact-elicitation.md` | Use when the user request does not clearly identify the target artifact or required context. |
+| Local automation | `scripts/` | Put repeatable local checks and helper scripts here. |
+| Test | `tests/` | Put local test suites here. |
 
 ## Repository Navigation
 
@@ -33,4 +35,4 @@ This file explains where work belongs. Use it before creating new files.
 
 ## Maintenance Rule
 
-When a change creates, moves, renames, or deletes important files or directories, update both `docs/FILE-INDEX.md` and `docs/FILE-MAP.md` in the same change. When a change creates or changes governed prompts, update `docs/prompts/README.md` too. If no update is needed, state why in the final summary.
+When a change creates, moves, renames, or deletes important files or directories, update `docs/FILE-INDEX.md`. Update `docs/FILE-MAP.md` only when the change adds or changes where a type of work belongs. When a change creates or changes governed prompts, update `docs/prompts/README.md` too. If no update is needed, state why in the final summary.

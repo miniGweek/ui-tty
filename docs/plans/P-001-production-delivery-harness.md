@@ -23,7 +23,7 @@ The baseline rule is: product variants inherit the generic harness unless a vari
 | Milestone | Purpose | Acceptance Check | Status |
 | --- | --- | --- | --- |
 | M1: Baseline standard | Define the production engineering expectations every variant inherits. | Production readiness, test strategy, security review, release/rollback, observability/runbook, definition of done, and variant profile docs exist. | In progress |
-| M2: Minimum viable enforcement | Add a local policy check command for governed docs. | A single command verifies the repo documentation governance rules and exits non-zero on failure. | Not started |
+| M2: Minimum viable enforcement | Add a local policy check command for governed docs. | A single command verifies the repo documentation governance rules and exits non-zero on failure. | In progress |
 | M3: Harness review | Verify the harness is usable for the first product variant. | A review packet shows what is ready, what is deferred, and what a variant must still decide. | Not started |
 
 ## Slices
@@ -35,7 +35,7 @@ The baseline rule is: product variants inherit the generic harness unless a vari
 | 1.3 Security review path | Define when and how security review happens. | Threat model trigger, review depth, sensitive change categories, evidence. | Full security policy or compliance program. | `docs/engineering/security-review.md`. | A variant can tell when security review is required. | Missing high-risk categories. | Slice 1.1 draft exists. | Stop if review triggers are unclear. | Yes |
 | 1.4 Release, rollback, and operations baseline | Define release evidence, rollback, observability, and runbook expectations. | Release readiness, rollback/stopping points, logs/metrics/traces expectations, runbook notes. | Specific cloud, CI, or deployment platform. | `docs/engineering/release-and-rollback.md` and `docs/engineering/observability-and-runbooks.md`. | A variant can describe how it releases, observes, and rolls back. | Baseline may become too platform-specific. | Slices 1.1 and 1.2 drafts exist. | Stop if deployment target assumptions enter the baseline. | Yes |
 | 1.5 Variant profile template | Define how variants inherit or override the baseline. | Variant profile template with inherited controls, overrides, risk level, required checks. | First product variant profile. | `docs/templates/variant-profile.md`. | A future variant can document inherited controls and deviations. | Variants may bypass baseline without explaining why. | Slices 1.1 through 1.4 drafted. | Stop if override rules are ambiguous. | Yes |
-| 2.1 Policy check command | Add a local command for docs governance. | Markdown link/ASCII checks, prompt inventory check, prompt trace checks, required index/map checks, banned wording checks. | Product build, app tests, deployment checks. | A script such as `scripts/check-docs.sh`. | The command passes on the current repo and fails on missing governed prompt inventory. | False positives that slow work. | Prompt and template rules are stable enough to check. | Disable only the failing check with a documented reason. | Yes |
+| 2.1 Policy check command | Add a local command for docs governance. | Markdown link/ASCII checks, prompt inventory check, prompt trace checks, required index/map checks, banned wording checks. | Product build, app tests, deployment checks. | `scripts/docs-lint.sh` and `scripts/docs_lint.py`. | The command passes on the current repo and fails on missing governed prompt inventory. | False positives that slow work. | Prompt and template rules are stable enough to check. | Disable only the failing check with a documented reason. | Yes |
 | 2.2 CI-ready check contract | Document how CI should call the local check command later. | Command contract, expected exit codes, what CI must report. | Creating CI workflow before provider is chosen. | `docs/engineering/ci-check-contract.md`. | A future CI job can call the same local command without redesign. | CI assumptions leak in too early. | Slice 2.1 exists. | Stop at documented contract if CI provider is undecided. | Yes |
 | 3.1 Harness review packet | Prepare the first review of the harness. | Summary, readiness evidence, deferred decisions, risks, recommendation. | Implementing first product variant. | Review packet in `docs/verification/`. | Reviewer can decide whether the harness is ready to govern the first variant. | Review packet hides unresolved gaps. | Milestones M1 and M2 complete. | Stop if core docs or policy checks are missing. | Yes |
 
@@ -48,7 +48,7 @@ The baseline rule is: product variants inherit the generic harness unless a vari
 | T-003 | Create security review path. | T-001 | Drafted |
 | T-004 | Create release, rollback, observability, and runbook baseline. | T-001, T-002 | Drafted |
 | T-005 | Create variant profile template. | T-001, T-002, T-003, T-004 | Drafted |
-| T-006 | Add docs governance check command. | T-005 | Not started |
+| T-006 | Add docs governance check command. | T-005 | Implemented |
 | T-007 | Document CI-ready check contract. | T-006 | Not started |
 | T-008 | Create harness review packet. | T-001 through T-007 | Not started |
 
@@ -78,6 +78,7 @@ The baseline rule is: product variants inherit the generic harness unless a vari
 | 2026-05-23 | Drafted Slice 1.3 security review path. |
 | 2026-05-23 | Drafted Slice 1.4 release/rollback and observability/runbook baselines. |
 | 2026-05-23 | Drafted Slice 1.5 variant profile template. |
+| 2026-05-24 | Implemented Slice 2.1 docs governance check command. |
 
 ## Scope Check
 

@@ -6,6 +6,7 @@ This file is the repository inventory. Update it when important files or directo
 
 | Path | Purpose |
 | --- | --- |
+| `.gitignore` | Local generated files that Git should ignore. |
 | `AGENTS.md` | Working rules for agents and engineers in this repository. |
 | `README.md` | Repository entry point and delivery flow summary. |
 | `docs/` | Source of truth for planning, design, execution, and verification docs. |
@@ -37,8 +38,20 @@ This file is the repository inventory. Update it when important files or directo
 | `docs/engineering/security-review.md` | Security review path and threat model triggers for future variants. |
 | `docs/engineering/release-and-rollback.md` | Stack-neutral release evidence and rollback expectations for future variants. |
 | `docs/engineering/observability-and-runbooks.md` | Stack-neutral observability and runbook expectations for future variants. |
+| `docs/engineering/docs-governance-checks.md` | Local docs governance checks and enforcement timing. |
 | `docs/prompts/README.md` | Prompt order, usage rules, artifact mapping, and prompt trace requirements. |
 | `docs/prompts/PRM-005-artifact-elicitation.md` | Interactive prompt for choosing and drafting the right governed artifact. |
+
+## Scripts and Tests
+
+| Path | Purpose |
+| --- | --- |
+| `scripts/` | Local automation scripts. |
+| `scripts/docs-lint.sh` | Shell entrypoint for docs governance checks. |
+| `scripts/docs_lint.py` | Python implementation of docs governance checks. |
+| `tests/` | Local test suite. |
+| `tests/test_docs_lint.py` | Baseline tests for the docs linter. |
+| `tests/test_docs_lint_policy.py` | Policy behavior tests for the docs linter. |
 
 ## Maintenance
 
