@@ -24,6 +24,56 @@
 - Refactor only after the test is green.
 - Keep tests close to the behavior they protect.
 
+## Operating Loop
+
+- Discover before changing files.
+- Plan only as much as needed for the size of the change.
+- Write or update tests before implementation when behavior changes.
+- Make the smallest useful change.
+- Verify with commands, screenshots, or logs.
+- Summarize what changed, what was verified, and what risk remains.
+
+## Progressive Discovery
+
+- Read local instructions first.
+- Inspect existing files, tests, scripts, and docs before asking questions.
+- Ask the user only when the answer cannot be found in the repo or the choice changes product intent.
+- Prefer narrow searches before broad searches.
+- State assumptions before acting on them.
+- Update assumptions when new evidence changes them.
+
+## Harness Engineering
+
+- Prefer repeatable commands over manual steps.
+- Add or use scripts for common checks when the repo grows.
+- Keep test, lint, build, and run commands discoverable from the repo.
+- Do not rely on hidden local state.
+- Capture failing commands and outputs when debugging.
+- Make verification easy for the next agent or engineer to rerun.
+
+## Completion Standard
+
+- Do not call work complete without fresh verification.
+- Record the exact command or method used to verify the change.
+- If verification cannot run, state why and describe the remaining risk.
+- Do not hide failed checks. Report the failure and the next useful action.
+
+## Change Discipline
+
+- Keep changes scoped to the task.
+- Do not refactor unrelated code while implementing a feature.
+- Preserve user changes already present in the working tree.
+- Prefer simple designs until the outcome requires more structure.
+- Add abstractions only when they remove repeated complexity or protect a clear boundary.
+
+## File Index and File Map
+
+- Keep `docs/FILE-INDEX.md` as the inventory of important files and directories.
+- Keep `docs/FILE-MAP.md` as the guide for where each kind of work belongs.
+- When adding, moving, renaming, or deleting files, update both documents in the same change.
+- If a change does not need an index or map update, say why in the final summary.
+- Keep entries short. Prefer purpose and ownership over implementation detail.
+
 ## Commits
 
 - Use Conventional Commits for commit messages.

@@ -2,6 +2,11 @@
 
 These docs are the repository source of truth for planning and execution.
 
+## Navigation
+
+- [FILE-INDEX.md](FILE-INDEX.md) lists important files and directories.
+- [FILE-MAP.md](FILE-MAP.md) explains where each kind of work belongs.
+
 ## Artifact Order
 
 1. Outcome brief: defines the intended result.

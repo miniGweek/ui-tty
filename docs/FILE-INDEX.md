@@ -1,0 +1,34 @@
+# File Index
+
+This file is the repository inventory. Update it when important files or directories are added, moved, renamed, or deleted.
+
+## Root
+
+| Path | Purpose |
+| --- | --- |
+| `AGENTS.md` | Working rules for agents and engineers in this repository. |
+| `README.md` | Repository entry point and delivery flow summary. |
+| `docs/` | Source of truth for planning, design, execution, and verification docs. |
+
+## Docs
+
+| Path | Purpose |
+| --- | --- |
+| `docs/README.md` | Docs entry point. |
+| `docs/delivery-workflow.md` | Lean delivery workflow and gates. |
+| `docs/FILE-INDEX.md` | Inventory of important files and directories. |
+| `docs/FILE-MAP.md` | Guide for where different kinds of work belong. |
+| `docs/outcomes/` | Outcome briefs. |
+| `docs/plans/` | Delivery plans. |
+| `docs/architecture/` | Architecture overviews and ADRs. |
+| `docs/design/` | Implementation design docs. |
+| `docs/specs/` | Behavior specs. |
+| `docs/tasks/` | Task contracts. |
+| `docs/verification/` | Verification records. |
+| `docs/templates/` | Templates for delivery artifacts. |
+
+## Maintenance
+
+- Add entries for files that future agents or engineers need to find quickly.
+- Do not list every generated file, cache, or dependency directory.
+- Keep descriptions short and stable.
