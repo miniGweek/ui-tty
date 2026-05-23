@@ -19,14 +19,24 @@ This file is the repository inventory. Update it when important files or directo
 | `docs/FILE-INDEX.md` | Inventory of important files and directories. |
 | `docs/FILE-MAP.md` | Guide for where different kinds of work belong. |
 | `docs/outcomes/` | Outcome briefs. |
+| `docs/outcomes/O-001-production-delivery-harness.md` | Outcome brief for the generic production delivery harness. |
 | `docs/plans/` | Delivery plans. |
+| `docs/plans/P-001-production-delivery-harness.md` | Delivery plan for the generic production delivery harness. |
 | `docs/architecture/` | Architecture overviews and ADRs. |
 | `docs/design/` | Implementation design docs. |
 | `docs/specs/` | Behavior specs. |
 | `docs/tasks/` | Task contracts. |
 | `docs/verification/` | Verification records. |
 | `docs/templates/` | Templates for delivery artifacts. |
+| `docs/templates/production-readiness-checklist.md` | Template for release readiness evidence and review decisions. |
+| `docs/templates/variant-profile.md` | Template for declaring variant assumptions, inherited controls, overrides, and required checks. |
 | `docs/prompts/` | Governed prompts for planning and design work. |
+| `docs/engineering/` | Production delivery harness standards and operating docs. |
+| `docs/engineering/production-readiness.md` | Generic production readiness standard for future variants. |
+| `docs/engineering/test-strategy.md` | Stack-neutral test strategy for future variants. |
+| `docs/engineering/security-review.md` | Security review path and threat model triggers for future variants. |
+| `docs/engineering/release-and-rollback.md` | Stack-neutral release evidence and rollback expectations for future variants. |
+| `docs/engineering/observability-and-runbooks.md` | Stack-neutral observability and runbook expectations for future variants. |
 | `docs/prompts/README.md` | Prompt order, usage rules, artifact mapping, and prompt trace requirements. |
 | `docs/prompts/PRM-005-artifact-elicitation.md` | Interactive prompt for choosing and drafting the right governed artifact. |
 

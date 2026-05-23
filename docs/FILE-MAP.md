@@ -14,7 +14,10 @@ This file explains where work belongs. Use it before creating new files.
 | Spec | `docs/specs/` | Use for user-visible behavior, APIs, states, errors, and edge cases. |
 | Task contract | `docs/tasks/` | Use for one executable unit of work. |
 | Verification record | `docs/verification/` | Use for evidence that a task, slice, or outcome meets its checks. |
+| Production engineering doc | `docs/engineering/` | Use for production readiness, test strategy, security review, release, rollback, observability, and runbook standards. |
 | Template | `docs/templates/` | Use when adding or changing delivery artifact formats. |
+| Production readiness checklist | `docs/templates/production-readiness-checklist.md` | Use before releasing a variant. |
+| Variant profile | `docs/templates/variant-profile.md` | Use before variant-specific architecture, design, or implementation starts. |
 | Governed prompt | `docs/prompts/` | Use for stage-specific planning and design prompts. |
 | Artifact elicitation prompt | `docs/prompts/PRM-005-artifact-elicitation.md` | Use when the user request does not clearly identify the target artifact or required context. |
 

@@ -10,6 +10,8 @@ Use these templates when creating delivery artifacts:
 - Spec: `spec.md`
 - Task contract: `task-contract.md`
 - Verification record: `verification-record.md`
+- Variant profile: `variant-profile.md`
+- Production readiness checklist: `production-readiness-checklist.md`
 
 Remove template guidance that does not apply before committing a concrete artifact.
 
