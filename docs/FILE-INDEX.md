@@ -26,6 +26,9 @@ This file is the repository inventory. Update it when important files or directo
 | `docs/tasks/` | Task contracts. |
 | `docs/verification/` | Verification records. |
 | `docs/templates/` | Templates for delivery artifacts. |
+| `docs/prompts/` | Governed prompts for planning and design work. |
+| `docs/prompts/README.md` | Prompt order, usage rules, artifact mapping, and prompt trace requirements. |
+| `docs/prompts/PRM-005-artifact-elicitation.md` | Interactive prompt for choosing and drafting the right governed artifact. |
 
 ## Maintenance
 

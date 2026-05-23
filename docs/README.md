@@ -6,6 +6,7 @@ These docs are the repository source of truth for planning and execution.
 
 - [FILE-INDEX.md](FILE-INDEX.md) lists important files and directories.
 - [FILE-MAP.md](FILE-MAP.md) explains where each kind of work belongs.
+- [prompts](prompts/README.md) defines governed prompts for planning and design work.
 
 ## Artifact Order
 

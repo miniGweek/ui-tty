@@ -74,6 +74,15 @@
 - If a change does not need an index or map update, say why in the final summary.
 - Keep entries short. Prefer purpose and ownership over implementation detail.
 
+## Prompt Governance
+
+- For planning and design work, read `docs/prompts/README.md` before drafting artifacts.
+- Use `PRM-000-standing-guardrails.md` with the active stage prompt.
+- Use `PRM-005-artifact-elicitation.md` when the user asks for a plan, design, spec, task, or review artifact and the target artifact is unclear.
+- Start at the lowest applicable stage and do not skip stages unless source artifacts already exist.
+- Record prompt use in the generated artifact under `Prompt Trace`.
+- If no governed prompt was used for a planning or design artifact, record `Prompt: none` and explain why.
+
 ## Commits
 
 - Use Conventional Commits for commit messages.

@@ -1,5 +1,13 @@
 # D-000: Design Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source
 
 - Outcome brief:

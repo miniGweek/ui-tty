@@ -1,5 +1,13 @@
 # O-000: Outcome Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Summary
 
 State the intended result in one or two short paragraphs.

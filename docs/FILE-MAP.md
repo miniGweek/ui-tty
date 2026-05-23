@@ -15,6 +15,8 @@ This file explains where work belongs. Use it before creating new files.
 | Task contract | `docs/tasks/` | Use for one executable unit of work. |
 | Verification record | `docs/verification/` | Use for evidence that a task, slice, or outcome meets its checks. |
 | Template | `docs/templates/` | Use when adding or changing delivery artifact formats. |
+| Governed prompt | `docs/prompts/` | Use for stage-specific planning and design prompts. |
+| Artifact elicitation prompt | `docs/prompts/PRM-005-artifact-elicitation.md` | Use when the user request does not clearly identify the target artifact or required context. |
 
 ## Repository Navigation
 
@@ -24,7 +26,8 @@ This file explains where work belongs. Use it before creating new files.
 | Repository overview | `README.md` | Keep focused on how to start. |
 | File inventory | `docs/FILE-INDEX.md` | Update when important files or directories change. |
 | File placement guide | `docs/FILE-MAP.md` | Update when new work types or directories are introduced. |
+| Prompt governance | `docs/prompts/README.md` | Use before creating planning or design artifacts with prompts. |
 
 ## Maintenance Rule
 
-When a change creates, moves, renames, or deletes important files or directories, update both `docs/FILE-INDEX.md` and `docs/FILE-MAP.md` in the same change. If no update is needed, state why in the final summary.
+When a change creates, moves, renames, or deletes important files or directories, update both `docs/FILE-INDEX.md` and `docs/FILE-MAP.md` in the same change. When a change creates or changes governed prompts, update `docs/prompts/README.md` too. If no update is needed, state why in the final summary.

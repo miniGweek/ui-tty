@@ -1,5 +1,13 @@
 # ADR-000: Decision Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Status
 
 Proposed

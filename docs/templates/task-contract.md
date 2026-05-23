@@ -1,5 +1,13 @@
 # T-000: Task Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source
 
 - Outcome brief:

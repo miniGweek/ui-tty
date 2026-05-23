@@ -1,5 +1,13 @@
 # V-000: Verification Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source
 
 - Outcome brief:

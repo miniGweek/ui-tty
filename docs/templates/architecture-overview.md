@@ -1,5 +1,13 @@
 # A-000: Architecture Overview Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source Outcome
 
 - Outcome brief:

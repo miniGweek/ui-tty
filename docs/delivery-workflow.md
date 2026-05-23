@@ -49,6 +49,18 @@ Keep identifiers stable. If a title changes, keep the identifier and update the 
 6. Record verification evidence in the task contract or a linked verification record.
 7. Update the delivery plan with actual status.
 
+## Prompt Governance
+
+Use governed prompts for planning and design artifacts:
+
+1. Read `docs/prompts/README.md`.
+2. Apply `PRM-000-standing-guardrails.md`.
+3. Run `PRM-005-artifact-elicitation.md` when the target artifact or missing context is unclear.
+4. Apply the active stage prompt when the artifact needs stage-specific guidance.
+5. Generate or update the matching repository artifact.
+6. Record prompt use in `Prompt Trace`.
+7. Continue only when the current stage output exists or the reason for skipping it is recorded.
+
 ## Completion Rules
 
 - Do not mark an outcome complete because all tasks are closed. Mark it complete when success criteria have evidence.

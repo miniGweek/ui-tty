@@ -1,5 +1,13 @@
 # P-000: Plan Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source Outcome
 
 - Outcome brief:

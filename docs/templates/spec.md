@@ -1,5 +1,13 @@
 # S-000: Spec Title
 
+## Prompt Trace
+
+- Prompt:
+- Inputs:
+- Output:
+- Date:
+- Operator:
+
 ## Source Outcome
 
 - Outcome brief:
